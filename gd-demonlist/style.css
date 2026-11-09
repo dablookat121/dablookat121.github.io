@@ -1,5 +1,7 @@
 body {
-    background-color: red !important;
+    font-family: 'Lexend', sans-serif;
+    color: black;
+    margin: 0;   
 }
 
 header {
