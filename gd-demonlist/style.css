@@ -1,1 +1,15 @@
+body {
+    font-family: 'Lexend', sans-serif;
+    color: black;
+    margin: 0;
+}
 
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    color: #4079FF;
+}
