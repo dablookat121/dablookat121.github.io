@@ -1,14 +1,160 @@
-body {
-    font-family: 'Lexend', sans-serif;
-    color: black;
-    margin: 0;   
+/* everything */
+* {
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: #212121;
+    color: white;
+    margin: 0;
+}
+
+
+/* ze headerz n navig */
 header {
     text-align: center;
     padding: 30px;
+    background-color: #191932;
+    border-bottom: 1px solid #323243;
 }
 
 header h1 {
     color: #4079FF;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #AFC8C8;
+    font-size: 13px;
+}
+
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #AFC8C8;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #4079FF;
+}
+
+
+/* main stuffiez */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+
+/* the list */
+.demon-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.demon-entry {
+    background-color: #212132;
+    border: 1px solid #323243;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* summriez */
+.demon-entry summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 20px;
+}
+
+.demon-entry summary::-webkit-details-marker {
+    display: none;
+}
+
+.demon-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.demon-entry summary:hover h3 {
+    color: #4079FF;
+}
+
+.demon-entry[open] {
+    border-color: #4079FF;
+}
+
+
+/* difficulties (lowk will probably change this to actual demon icons?) */
+.difficulty {
+    font-size: 11px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.extreme {
+    background-color: #642132;
+    color: #FF7987;
+}
+
+.insane {
+    background-color: #644321;
+    color: #FFAF64;
+}
+
+.hard {
+    background-color: #254A32;
+    color: #79C896;
+}
+
+
+/* expanded */
+.demon-details {
+    padding: 20px;
+    background-color: #212132;
+    border-top: 1px solid #323243;
+}
+
+.demon-details h4 {
+    color: #4079FF;
+    margin-top: 5px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 20px;
+}
+
+.details-grid p {
+    color: #AFC8C8;
+    font-size: 13px;
+}
+
+.details-grid strong {
+    color: white;
+}
+
+.demon-details a {
+    color: #4079FF;
+    text-decoration: none;
+}
+
+.demon-details a:hover {
+    text-decoration: underline;
 }
